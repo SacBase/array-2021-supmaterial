@@ -11,23 +11,19 @@ use StdIO: all;
 #ifndef EMNIST
 #define CATEGORIES 10
 #define TRAIN_SIZE 60000
-//#define TRAIN_IMG "data/EMNIST/raw/emnist-mnist-train-images-idx3-ubyte"
-//#define TRAIN_LAB "data/EMNIST/raw/emnist-mnist-train-labels-idx1-ubyte"
-#define TRAIN_IMG "data/MNIST/raw/train-images-idx3-ubyte"
-#define TRAIN_LAB "data/MNIST/raw/train-labels-idx1-ubyte"
+#define TRAIN_IMG "data/MNIST/train-images-idx3-ubyte"
+#define TRAIN_LAB "data/MNIST/train-labels-idx1-ubyte"
 #define TEST_SIZE 10000
-//#define TEST_IMG "data/EMNIST/raw/emnist-mnist-test-images-idx3-ubyte"
-//#define TEST_LAB "data/EMNIST/raw/emnist-mnist-test-labels-idx1-ubyte"
-#define TEST_IMG "data/MNIST/raw/t10k-images-idx3-ubyte"
-#define TEST_LAB "data/MNIST/raw/t10k-labels-idx1-ubyte"
+#define TEST_IMG "data/MNIST/t10k-images-idx3-ubyte"
+#define TEST_LAB "data/MNIST/t10k-labels-idx1-ubyte"
 #else /* EMNIST */
 #define CATEGORIES 47
 #define TRAIN_SIZE 112800
-#define TRAIN_IMG "data/EMNIST/raw/emnist-balanced-train-images-idx3-ubyte"
-#define TRAIN_LAB "data/EMNIST/raw/emnist-balanced-train-labels-idx1-ubyte"
+#define TRAIN_IMG "data/EMNIST/emnist-balanced-train-images-idx3-ubyte"
+#define TRAIN_LAB "data/EMNIST/emnist-balanced-train-labels-idx1-ubyte"
 #define TEST_SIZE 18800
-#define TEST_IMG "data/EMNIST/raw/emnist-balanced-test-images-idx3-ubyte"
-#define TEST_LAB "data/EMNIST/raw/emnist-balanced-test-labels-idx1-ubyte"
+#define TEST_IMG "data/EMNIST/emnist-balanced-test-images-idx3-ubyte"
+#define TEST_LAB "data/EMNIST/emnist-balanced-test-labels-idx1-ubyte"
 #endif /* EMNIST */
 
 //specialize float[*] MultiConv( float[28,28] in, float[6,5,5] weights, float[6] bias);

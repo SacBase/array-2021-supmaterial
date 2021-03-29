@@ -1,4 +1,4 @@
-SAC2C := sac2c_d
+SAC2C := sac2c
 # it is 'safe' to keep `-mt_bind` and `-cuda_arch` as these only have
 # an effect when using MT or CUDA backends
 SACFLAGS += -g -v1 -O3 -mt_bind simple -cuda_arch sm35
