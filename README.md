@@ -9,8 +9,7 @@ image recognition that is based on Zhifei Zhang's paper *Derivation of
 Backpropagation in Convolutional Neural Network* (see the [paper][zhang] for more details).
 
 These implementations are presented in the paper *Array Languages Make Neural Networks Fast*,
-which is submitted for review at PLDI's ARRAY 2021 Workshop. A previous version of the paper
-is available on [ArXiv][paper].
+which is submitted for review at PLDI's ARRAY 2021 Workshop.
 
 We have four implementations, one in Tensorflow (Python), TensorFlow (C++), PyTorch (Python),
 SaC. These implementations use the MNIST dataset (see the `input` directory for details on
